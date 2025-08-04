@@ -1,1 +1,5 @@
 "test file 1" 
+<<<<<<< HEAD
+=======
+"WIP feature" 
+>>>>>>> cf64097d6c468ef87aaa992eb59d86c8ae4322c2
