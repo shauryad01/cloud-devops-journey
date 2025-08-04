@@ -1,0 +1,3 @@
+"This text is to conflict" 
+This is from main branch
+Line 3
