@@ -1,4 +1,4 @@
-# 02 – Diff, Stash, and Tags (so far)
+# 02 – Diff, Stash, and Tags
 
 This one was about comparing changes, pausing work mid-way, and tagging important commits. Mostly exploring how Git helps when you’re *not ready to commit* yet or need to mark a checkpoint.
 
