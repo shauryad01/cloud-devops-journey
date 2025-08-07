@@ -1,4 +1,4 @@
-# 03 – Rebase & Reflog (so far)
+# 03 – Rebase & Reflog
 
 This part was about rewriting commit history and recovering from mistakes. Rebase helped clean up the log, but it’s easy to mess things up if you don’t know what you're doing. Reflog = life saver.
 
