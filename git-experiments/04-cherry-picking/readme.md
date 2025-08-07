@@ -11,4 +11,3 @@ Tested how to move specific commits from one branch to another without merging t
 - `git cherry-pick --continue` – Used this after resolving conflicts during a pick.
 
 - `git cherry-pick --abort` – Backed out of a bad cherry-pick when things went sideways.
-- 
