@@ -34,7 +34,7 @@ Planned (not started yet):
 
 ---
 
-## 🤝 Connect
+## 🤝 Follow Along
 
 - [LinkedIn](https://www.linkedin.com/in/shauryadhingra/)
 - [GitHub](https://github.com/shauryad01)
