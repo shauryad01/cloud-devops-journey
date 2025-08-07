@@ -25,6 +25,9 @@ Each subfolder here focuses on one area I wanted to understand better. There’s
 - **`05-reset-revert/`**  
   Tried different ways to undo changes. Learned the difference between safe undo (`revert`) and destructive reset (`--hard`).
 
+- **`06-setting-up-github/`**  
+  Connected local repos to GitHub using SSH, pushed commits, and explored remote workflows.
+
 ---
 
 ## 📚 Resources I Used
@@ -52,4 +55,5 @@ There’s more to explore — maybe submodules, hooks, or signed commits — but
 - **GitHub:** [@shauryad01](https://github.com/shauryad01)
 - **LinkedIn:** [Shaurya Dhingra](https://www.linkedin.com/in/shauryadhingra/)
 - **Blog (coming soon):** Hashnode – to be linked here when ready
+
 
