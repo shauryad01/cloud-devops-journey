@@ -17,8 +17,3 @@ This part was about rewriting commit history and recovering from mistakes. Rebas
 - `git checkout <reflog-hash>` – Restored broken state after a bad rebase.
 
 - `git reset --hard <commit>` – Used to clean up after experimenting with broken rebase flows.
-
----
-
-I also used a few test files to simulate messy commit histories.  
-*(see: `files_for_rebase.jpg`)*
