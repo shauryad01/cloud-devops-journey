@@ -54,6 +54,7 @@ There’s more to explore — maybe submodules, hooks, or signed commits — but
 
 - **GitHub:** [@shauryad01](https://github.com/shauryad01)
 - **LinkedIn:** [Shaurya Dhingra](https://www.linkedin.com/in/shauryadhingra/)
-- **Blog (coming soon):** Hashnode – to be linked here when ready
+- **Docs:** [Hashnode](https://shauryad01.hashnode.dev/)
+
 
 
