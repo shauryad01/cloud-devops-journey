@@ -38,4 +38,4 @@ Planned (not started yet):
 
 - [LinkedIn](https://www.linkedin.com/in/shauryadhingra/)
 - [GitHub](https://github.com/shauryad01)
-- Blog: coming soon…
+- Docs: [Hashnode](https://shauryad01.hashnode.dev/)
