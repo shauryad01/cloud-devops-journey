@@ -1,4 +1,3 @@
-````markdown
 # 02-rtfm-man-tldr-help
 
 Practiced using **built-in help tools** in Linux (`man`, `--help`, `tldr`) to explore and troubleshoot commands without relying on Google.
@@ -13,7 +12,7 @@ Practiced using **built-in help tools** in Linux (`man`, `--help`, `tldr`) to ex
    man pwd
    man chmod
    ```
-````
+
 
 - Purpose: Access the **full documentation** of commands, including description, syntax, options, and examples.
 - Notes:
@@ -75,6 +74,3 @@ Knowing how to read and search Linux documentation:
 - [`tldr` Project on GitHub](https://github.com/tldr-pages/tldr)
 - [Linux `apropos` Command](https://man7.org/linux/man-pages/man1/apropos.1.html)
 
-```
-
-```
