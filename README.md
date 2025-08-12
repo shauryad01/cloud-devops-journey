@@ -24,6 +24,15 @@ Planned (not started yet):
 - `projects/` — combined workflows & mini use-cases
 
 ---
+## 🧩 [Projects](https://github.com/shauryad01/cloud-devops-journey/tree/main/projects/)
+
+This folder is where I actually build things — mini end-to-end labs that combine the topics above. Every project is practice-first: broken builds, fixes, and working demos live here.
+
+**How projects are organised**
+- Each project gets a folder under `projects/` with a short README, a `how-to-run` snippet, and a `notes.md` for mistakes/fixes.
+
+### Projects Completed in this Journey (So Far):
+- [Week 1: Basic CLI-based To-Do List (Bash, Linux, Git)](https://github.com/shauryad01/cloud-devops-journey/tree/main/projects/week-1-todo-list-cli)
 
 ## 🔗 Resources I'm Using
 
