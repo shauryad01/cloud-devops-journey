@@ -25,6 +25,7 @@ while true; do
 				((i++))
 			else
 				task=$(sed -n "${taskno}p" tasklist.txt)
+				task="${task%:Pending}"
 				echo "$task"
 				if [ -f tasklist.txt ]; then
 					
