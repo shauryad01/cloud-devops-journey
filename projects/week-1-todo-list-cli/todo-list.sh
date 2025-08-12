@@ -2,11 +2,11 @@ while true; do
 	read -p "Choose Command: (1- Add Task, 2- List Tasks, 3- Mark Task as Done, 4- List Tasks Done, 5- Delete Task, 6- Exit) " cmd
 
 	case "$cmd" in
-	  1)
+	  1)   # Add Task Case
 	    read -p "Enter Task: " task
 	    echo "$task:Pending" >> tasklist.txt
 	    ;;
-	  2)
+	  2)   # List Tasks Case
 	    if [ -f tasklist.txt ]; then
 		    grep ":Pending" tasklist.txt | nl
 		   
@@ -14,7 +14,7 @@ while true; do
 	      echo "No tasks found."
 	    fi
 	    ;;
-	  3)	
+	  3)	# Mark Task as Done Case
 		  echo "Current Tasks: "
 		  grep ":Pending" tasklist.txt | nl
 		  declare -i i=0
@@ -46,7 +46,7 @@ while true; do
 			exit 1
 			fi
 		;;
-    4)	
+    4)	   # List Tasks Done Case
 	    if [ -f taskdone.txt ]; then                                
                                   echo "Tasks Done: "
                                   nl taskdone.txt
@@ -57,7 +57,7 @@ while true; do
 
 
 
-	  5)  
+	  5)    # Delete Task Case
 		
 		  echo "Current Tasks: "
 		  grep ":Pending" tasklist.txt | nl
@@ -85,7 +85,8 @@ while true; do
 			fi
 		;;
 
-    6)		echo "Exiting..."
+    6)		# Exit Case
+			echo "Exiting..."
 			break
 		;;
 	    *)
