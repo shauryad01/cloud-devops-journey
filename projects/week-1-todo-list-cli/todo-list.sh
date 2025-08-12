@@ -51,20 +51,28 @@ while true; do
 		
 		  echo "Current Tasks: "
 		  grep ":Pending" tasklist.txt | nl
-		  read -p "Enter task number to delete: " taskno
-		  if ! [[ "$taskno" =~ ^[0-9]+$ ]]; then
-		    echo "Invalid input. Must be a number."
-		    exit 1
-		  else
-			  task=$(sed -n "${taskno}p" tasklist.txt)
-			  if [ -s tasklist.txt ]; then	  
-				  sed -i "${taskno}d" tasklist.txt
-				  echo "Task "$task" Deleted."
-			  else
-				  echo "No tasks found"
-			  fi
-		  fi
-	    ;;
+		  declare -i i=0
+		  for ((i = 0 ; i < 3 ; i++ )); do 
+		  	read -p "Enter task number to delete: " taskno
+			if ! [[ "$taskno" =~ ^[0-9]+$ ]]; then
+				echo "Invalid input. Must be a number. Try Again."
+
+			else
+				task=$(sed -n "${taskno}p" tasklist.txt)
+				if [ -s tasklist.txt ]; then	  
+					sed -i "${taskno}d" tasklist.txt
+					echo "Task "$task" Deleted."
+				else
+					echo "No tasks found"
+				fi
+				break
+			fi
+		  done
+		if [ i == 3 ]; then
+			echo "Invalid input for 3 times. Exiting..."
+			exit 1
+			fi
+		;;
 
     6)		echo "Exiting..."
 			break
