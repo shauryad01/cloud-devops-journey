@@ -1,4 +1,4 @@
-# Cheatsheet: 03-navigating-file-structure-and-superuser
+# Cheatsheet: 03 - Navigating-File-Structure-and-Superuser
 
 ## Navigation Basics
 
