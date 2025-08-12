@@ -17,25 +17,34 @@ while true; do
 	  3)	
 		  echo "Current Tasks: "
 		  grep ":Pending" tasklist.txt | nl
-		  read -p "Enter task number to mark as done: " taskno
-		  if ! [[ "$taskno" =~ ^[0-9]+$ ]]; then
-		    echo "Invalid input. Must be a number."
-		    exit 1
-		  else
-			  task=$(sed -n "${taskno}p" tasklist.txt)
-			  echo "$task"
-			  if [ -f tasklist.txt ]; then
-				   
-				  sed -i "${taskno}d" tasklist.txt
-				  echo "$task:Done" >> taskdone.txt
-				  echo "Marked Task "$task" as Done."
-				  echo "Tasks Done: "
-				  grep "$task:Done" taskdone.txt | nl
-			  else
-				  echo "No tasks found"
-			  fi
-		  fi
-	    ;;
+		  declare -i i=0
+		  while(( i < 3 )); do
+			read -p "Enter task number to mark as done: " taskno
+			if ! [[ "$taskno" =~ ^[0-9]+$ ]]; then
+				echo "Invalid input. Must be a number."
+				((i++))
+			else
+				task=$(sed -n "${taskno}p" tasklist.txt)
+				echo "$task"
+				if [ -f tasklist.txt ]; then
+					
+					sed -i "${taskno}d" tasklist.txt
+					echo "$task:Done" >> taskdone.txt
+					echo "Marked Task "$task" as Done."
+					echo "Tasks Done: "
+					grep "$task:Done" taskdone.txt | nl
+				else
+					echo "No tasks found"
+				fi
+				
+				break
+			fi
+			done
+		if [ "$i" -eq 3 ]; then
+			echo "Invalid input for 3 times. Exiting..."
+			exit 1
+			fi
+		;;
     4)	
 	    if [ -f taskdone.txt ]; then                                
                                   echo "Tasks Done: "
@@ -52,10 +61,11 @@ while true; do
 		  echo "Current Tasks: "
 		  grep ":Pending" tasklist.txt | nl
 		  declare -i i=0
-		  for ((i = 0 ; i < 3 ; i++ )); do 
+		  while (( i < 3 )); do 
 		  	read -p "Enter task number to delete: " taskno
 			if ! [[ "$taskno" =~ ^[0-9]+$ ]]; then
 				echo "Invalid input. Must be a number. Try Again."
+				((i++))
 
 			else
 				task=$(sed -n "${taskno}p" tasklist.txt)
@@ -68,7 +78,7 @@ while true; do
 				break
 			fi
 		  done
-		if [ i == 3 ]; then
+		if [ "$i" -eq 3 ]; then
 			echo "Invalid input for 3 times. Exiting..."
 			exit 1
 			fi
