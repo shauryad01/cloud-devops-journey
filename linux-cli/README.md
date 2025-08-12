@@ -24,6 +24,16 @@ Each subfolder focuses on one skill area. There’s no copy-paste cheat sheet or
   Installed, updated, and removed **software** with **package managers** (`apt`, `yum`, `dnf`). Added/removed **repositories** and fixed **dependency errors**.
 
 ---
+## 📄 Cheatsheets
+
+Checkout these cheatsheets for quick command references:
+
+- [01 — Setting up EC2](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/01-setting-up-ec2/cheatsheet.md)  
+- [02 — RTFM, MAN, TLDR, HELP](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/02-rtfm-man-tldr-help/cheatsheet.md)  
+- [03 — Navigating File Structure & Superuser](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/03-navigating-file-structure-and-superuser/cheatsheet.md)  
+- [04 — Package Management](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/04-package-management/cheatsheet.md)  
+
+---
 
 ## 📚 Resources I Used
 
