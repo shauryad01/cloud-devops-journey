@@ -90,16 +90,6 @@
 
 ---
 
-## **Practice Tasks**
-
-- Open a file and move to line 10 using `:10`.
-- Delete the current line and paste it below line 20.
-- Search for the word "error" and replace it with "warning".
-- Indent a block of 5 lines using visual mode.
-- Create a new file from inside Vim, write some text, and save/quit.
-
----
-
 ## **Paths & Config**
 
 | Path             | Purpose                     |
