@@ -1,4 +1,4 @@
-# 07-searching-and-text-processing
+# 07-text-processing
 
 Explored common Linux text-processing utilities and pipelines (search, transform, join, split, count) for working with logs, CSVs and streams.
 
