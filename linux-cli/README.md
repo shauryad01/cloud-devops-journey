@@ -1,6 +1,6 @@
 # Linux-CLI
 
-This folder is where I started building real comfort with the Linux command line.
+This folder is where I started building real comfort with the Linux command line.  
 I’d used Linux casually before — running the occasional command or following install instructions — but never dug into the fundamentals properly.
 
 These experiments were my way of doing that: opening a terminal, typing commands I barely knew, breaking things, fixing them, and slowly understanding how Linux actually works.
@@ -11,27 +11,50 @@ Each subfolder focuses on one skill area. There’s no copy-paste cheat sheet or
 
 ## 🗂️ What’s in here
 
-- **`01-setting-up-ec2/`**
+- **`01-setting-up-ec2/`**  
   Launched and connected to an **EC2 instance**, configured **SSH keys**, and explored **basic system info** (`whoami`, `uname`, `top`, etc.) to get familiar with the environment.
 
-- **`02-rtfm-man-tldr-help/`**
+- **`02-rtfm-man-tldr-help/`**  
   Mastered the built-in **help tools**: `man`, `--help`, and `tldr`. Learned to **troubleshoot** and explore commands without relying on Google.
 
-- **`03-navigating-file-structure-and-superuser/`**
+- **`03-navigating-file-structure-and-superuser/`**  
   Moved around the **file system**, understood **Linux directory structure**, and practiced using **`sudo`** responsibly.
 
-- **`04-package-management/`**
+- **`04-package-management/`**  
   Installed, updated, and removed **software** with **package managers** (`apt`, `yum`, `dnf`). Added/removed **repositories** and fixed **dependency errors**.
 
+- **`05-vim-editing/`**  
+  Practiced using **Vim editor**: insert/normal modes, saving, quitting, searching, replacing, and basic navigation.
+
+- **`06-shell-basics/`**  
+  Learned about **environment variables**, **PATH**, command history, and simple shell customizations.
+
+- **`07-text-processing/`**  
+  Worked with `cat`, `less`, `head`, `tail`, `cut`, `sort`, `uniq`, `wc`, `tr`, and `awk` to manipulate and process text files.
+
+- **`08-file-and-directory-operations/`**  
+  Hands-on with creating, moving, copying, deleting files & directories. Also worked with **links (`ln`, `ln -s`)** and file metadata (`stat`, `du`, `df`).
+
+- **`09-permissions-and-ownership/`**  
+  Managed file **permissions** with `chmod`, **ownership** with `chown`, special modes (**SUID, SGID, sticky bit**), and default masks via **`umask`**.
+
+- **`10-user-management/`**  
+  Created, modified, locked, and deleted users. Managed **groups**, **sudo privileges**, **login shells**, **password policies (`chage`)**, and explored **/etc/passwd**, **/etc/shadow**, **/etc/skel**.
+
 ---
+
 ## 📄 Cheatsheets
 
-Checkout these cheatsheets for quick command references:
-
-- [01 — Setting up EC2](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/01-setting-up-ec2/cheatsheet.md)  
-- [02 — RTFM, MAN, TLDR, HELP](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/02-rtfm-man-tldr-help/cheatsheet.md)  
-- [03 — Navigating File Structure & Superuser](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/03-navigating-file-structure-and-superuser/cheatsheet.md)  
-- [04 — Package Management](https://github.com/shauryad01/cloud-devops-journey/blob/linux-1/linux-cli/04-package-management/cheatsheet.md)  
+- [01 — Setting up EC2](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/01-setting-up-ec2/cheatsheet.md)
+- [02 — RTFM, MAN, TLDR, HELP](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/02-rtfm-man-tldr-help/cheatsheet.md)
+- [03 — Navigating File Structure & Superuser](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/03-navigating-file-structure-and-superuser/cheatsheet.md)
+- [04 — Package Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/04-package-management/cheatsheet.md)
+- [05 — Vim Editing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/05-vim-editing/cheatsheet.md)
+- [06 — Shell Basics](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/06-shell-basics/cheatsheet.md)
+- [07 — Text Processing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/07-text-processing/cheatsheet.md)
+- [08 — File & Directory Operations](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/08-file-and-directory-operations/cheatsheet.md)
+- [09 — Permissions & Ownership](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/09-permissions-and-ownership/cheatsheet.md)
+- [10 — User Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/10-user-management/cheatsheet.md)
 
 ---
 
@@ -49,21 +72,25 @@ If you’re starting with Linux CLI, these helped me a lot:
 
 ---
 
-## ❓Why This Exists
+## ❓ Why This Exists
 
-I didn’t want to be the person who panics when the GUI isn’t available.
+I didn’t want to be the person who panics when the GUI isn’t available.  
 Learning Linux CLI is a core skill for DevOps, and for an engineer in general. The only way to actually learn it is to _use_ it — so that’s what I did here.
 
-This folder will probably grow as I cover more advanced topics (shell scripting, permissions, processes, networking), but for now, it’s my Week 1 foundation.
+This folder is steadily growing as I cover advanced topics (processes, networking, services, security).  
+Each directory = one **hands-on learning block**.
 
 ---
 
 ## 🔜 Next Steps
 
-- Learn and practice **file permissions & ownership** (`chmod`, `chown`, `umask`).
-- Explore **process management** (`ps`, `kill`, `top`, `htop`).
-- Get hands-on with **shell scripting basics**.
-- Dive into **networking commands** (`ping`, `netstat`, `curl`, `wget`).
+- **Process Management** (`ps`, `jobs`, `kill`, `top`, `htop`).
+- **Disk & System Info** (`lsblk`, `df`, `du`, `free`, `uptime`).
+- **Networking Basics** (`ping`, `curl`, `wget`, `ss`, `netstat`).
+- **Service Management (systemctl, services, systemd basics)**.
+- **Logs & Monitoring** (`journalctl`, `/var/log/`).
+- **Security Basics** (firewall, ports, fail2ban).
+- Eventually: **Shell scripting** for automation.
 
 ---
 
@@ -71,4 +98,4 @@ This folder will probably grow as I cover more advanced topics (shell scripting,
 
 - **GitHub:** [@shauryad01](https://github.com/shauryad01)
 - **LinkedIn:** [Shaurya Dhingra](https://www.linkedin.com/in/shauryadhingra/)
-- **Docs:** [Hashnode](https://shauryad01.hashnode.dev/)
+- **Docs/Blog:** [Hashnode](https://shauryad01.hashnode.dev/)
