@@ -44,34 +44,29 @@ Each subfolder focuses on one skill area. There’s no copy-paste cheat sheet or
 - **`11-process-management/`**  
   Learned **process fundamentals** (PID, PPID, UID, TTY, states), **foreground/background jobs**, **job control** (`bg`, `fg`, `disown`, `nohup`), **signals**, **priorities** (`nice`, `renice`), **daemons/services**, and **advanced tools** (`strace`, `pmap`, `lsof`, `time`). Also covered **fork**, **child processes**, and handling **zombie/orphan processes**.
 
-    
+- **`12-service-management/`**  
+  Explored **systemctl** and **systemd basics**. Learned how to start, stop, restart, enable, and disable services. Wrote a **custom systemd unit file** for a Python app, reloaded the daemon, and managed persistent services across reboots.
+
+- **`13-server-info-disk-management/`**  
+  Covered **system hardware info** (`lscpu`, `lsusb`, `lspci`), **memory/disk usage** (`free`, `uptime`, `lsblk`, `df`, `du`), **partitions** (`fdisk`, `mkfs`, `mount`, `umount`), **UUIDs**, and practiced with **LVM** and **swap management** on an AWS EC2 instance.
 
 ----------
 
 ## 📄 Cheatsheets
 
--   [01 — Setting up EC2](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/01-setting-up-ec2/cheatsheet.md)
-    
--   [02 — RTFM, MAN, TLDR, HELP](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/02-rtfm-man-tldr-help/cheatsheet.md)
-    
--   [03 — Navigating File Structure & Superuser](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/03-navigating-file-structure-and-superuser/cheatsheet.md)
-    
--   [04 — Package Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/04-package-management/cheatsheet.md)
-    
--   [05 — Vim Editing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/05-vim-editing/cheatsheet.md)
-    
--   [06 — Shell Basics](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/06-shell-basics/cheatsheet.md)
-    
--   [07 — Text Processing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/07-text-processing/cheatsheet.md)
-    
--   [08 — File & Directory Operations](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/08-file-and-directory-operations/cheatsheet.md)
-    
--   [09 — Permissions & Ownership](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/09-permissions-and-ownership/cheatsheet.md)
-    
--   [10 — User Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/10-user-management/cheatsheet.md)
-    
--   [11 — Process Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/11-process-management/cheatsheet.md)
-    
+-   [01 — Setting up EC2](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/01-setting-up-ec2/cheatsheet.md)  
+-   [02 — RTFM, MAN, TLDR, HELP](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/02-rtfm-man-tldr-help/cheatsheet.md)  
+-   [03 — Navigating File Structure & Superuser](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/03-navigating-file-structure-and-superuser/cheatsheet.md)  
+-   [04 — Package Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/04-package-management/cheatsheet.md)  
+-   [05 — Vim Editing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/05-vim-editing/cheatsheet.md)  
+-   [06 — Shell Basics](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/06-shell-basics/cheatsheet.md)  
+-   [07 — Text Processing](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/07-text-processing/cheatsheet.md)  
+-   [08 — File & Directory Operations](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/08-file-and-directory-operations/cheatsheet.md)  
+-   [09 — Permissions & Ownership](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/09-permissions-and-ownership/cheatsheet.md)  
+-   [10 — User Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/10-user-management/cheatsheet.md)  
+-   [11 — Process Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/11-process-management/cheatsheet.md)  
+-   [12 — Service Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/12-service-management/cheatsheet.md)  
+-   [13 — Server Info & Disk Management](https://github.com/shauryad01/cloud-devops-journey/blob/main/linux-cli/13-server-info-disk-management/cheatsheet.md)  
 
 ----------
 
@@ -79,20 +74,13 @@ Each subfolder focuses on one skill area. There’s no copy-paste cheat sheet or
 
 If you’re starting with Linux CLI, these helped me a lot:
 
--   **[Linux Journey](https://linuxjourney.com/)** — Great beginner-friendly explanations.
-    
--   **[TrainWithShubham Linux Playlist](https://youtube.com/playlist?list=PLlfy9GnSVerQr-Se9JRE_tZJk3OUoHCkh&si=leYXfZmXWX32phR9)** — Full Linux training series for DevOps learners.
-    
--   **[TrainWithShubham Linux One-Shot](https://youtu.be/e01GGTKmtpc?si=s4ChOBpA_TwuHsnm)** — Concise, practical overview.
-    
--   **[Linux Upskill Challenge](https://linuxupskillchallenge.org/)** — 21-day hands-on learning path.
-    
--   **[The Linux Documentation Project](https://tldp.org/)** — Old but still useful references.
-    
--   **[Ubuntu Manpages](https://manpages.ubuntu.com/)** — For command-specific help.
-    
--   Built-in help tools: **`man`**, **`--help`**, **`tldr`**.
-    
+-   **[Linux Journey](https://linuxjourney.com/)** — Great beginner-friendly explanations.  
+-   **[TrainWithShubham Linux Playlist](https://youtube.com/playlist?list=PLlfy9GnSVerQr-Se9JRE_tZJk3OUoHCkh&si=leYXfZmXWX32phR9)** — Full Linux training series for DevOps learners.  
+-   **[TrainWithShubham Linux One-Shot](https://youtu.be/e01GGTKmtpc?si=s4ChOBpA_TwuHsnm)** — Concise, practical overview.  
+-   **[Linux Upskill Challenge](https://linuxupskillchallenge.org/)** — 21-day hands-on learning path.  
+-   **[The Linux Documentation Project](https://tldp.org/)** — Old but still useful references.  
+-   **[Ubuntu Manpages](https://manpages.ubuntu.com/)** — For command-specific help.  
+-   Built-in help tools: **`man`**, **`--help`**, **`tldr`**.  
 
 ----------
 
@@ -108,26 +96,16 @@ Each directory = one **hands-on learning block**.
 
 ## 🔜 Next Steps
 
--   **Disk & System Info** (`lsblk`, `df`, `du`, `free`, `uptime`)
-    
--   **Networking Basics** (`ping`, `curl`, `wget`, `ss`, `netstat`)
-    
--   **Service Management** (`systemctl`, `services`, `systemd basics`)
-    
--   **Logs & Monitoring** (`journalctl`, `/var/log/`)
-    
--   **Security Basics** (firewall, ports, fail2ban)
-    
--   Eventually: **Shell scripting** for automation
-    
+-   **Networking Basics** (`ping`, `curl`, `wget`, `ss`, `netstat`)  
+-   **Logs & Monitoring** (`journalctl`, `/var/log/`)  
+-   **Security Basics** (firewall, ports, fail2ban)  
+-   **Troubleshooting Commands** (`dmesg`, `journalctl`, `lsof`, `strace`)  
+-   Eventually: **Shell scripting** for automation  
 
 ----------
 
 ## 🤝 Follow Along
 
--   **GitHub:** [@shauryad01](https://github.com/shauryad01)
-    
--   **LinkedIn:** [Shaurya Dhingra](https://www.linkedin.com/in/shauryadhingra/)
-    
--   **Docs/Blog:** [Hashnode](https://shauryad01.hashnode.dev/)
-    
+-   **GitHub:** [@shauryad01](https://github.com/shauryad01)  
+-   **LinkedIn:** [Shaurya Dhingra](https://www.linkedin.com/in/shauryadhingra/)  
+-   **Docs/Blog:** [Hashnode](https://shauryad01.hashnode.dev/)  
