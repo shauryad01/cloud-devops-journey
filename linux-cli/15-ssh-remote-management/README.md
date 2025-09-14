@@ -58,18 +58,6 @@ sudo systemctl restart ssh
 
 ---
 
-**File Transfer**  
-Used scp to copy files:
-
-```
-scp file.txt user@remote:/home/user/
-scp user@remote:/etc/hosts ./hosts_copy
-```
-
-Practiced with rsync for efficient syncing.
-
----
-
 **Advanced Usage**  
 Created `~/.ssh/config` for aliases (shortcut: `ssh my-ec2`).
 
@@ -97,7 +85,6 @@ ControlPersist 10m
 - SSH is the default way to manage Linux servers in DevOps and Cloud.
 - Key-based authentication = stronger security, no password reuse.
 - Config changes (port, disabling root) = reduce attack surface.
-- File transfer (scp, rsync, sftp) is essential for moving configs/logs.
 - Advanced tricks (aliases, forwarding, multiplexing) make remote work faster and more reliable.
 - Real-world relevance: logging into AWS EC2, bastion hosts, and managing remote infrastructure.
 
