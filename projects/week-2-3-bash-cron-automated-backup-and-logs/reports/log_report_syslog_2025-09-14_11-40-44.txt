@@ -1,0 +1,36 @@
+Log Analysis Report: /var/log/syslog
+Generated on: Sun Sep 14 11:40:44 IST 2025
+
+ERRORS REPORTED:
+2025-09-14T09:26:59.869694+05:30 mycloudaws python3[563]: SyntaxError: invalid syntax
+2025-09-14T09:27:01.050312+05:30 mycloudaws python3[1072]: SyntaxError: invalid syntax
+2025-09-14T09:27:02.630922+05:30 mycloudaws python3[1160]: SyntaxError: invalid syntax
+2025-09-14T09:27:03.771094+05:30 mycloudaws python3[1485]: SyntaxError: invalid syntax
+2025-09-14T09:27:04.655495+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-14T09:27:04.667996+05:30 mycloudaws python3[1594]: SyntaxError: invalid syntax
+2025-09-14T09:27:04.668033+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.6570 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-14T09:27:06.496223+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8008 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T09:27:06.597313+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8593 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-14T09:27:06.699132+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8593 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-14T09:57:03.916352+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:57:03.9129 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T09:57:04.016984+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:57:03.9545 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-14T09:57:04.117256+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:57:03.9545 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-14T10:16:57.325160+05:30 mycloudaws fwupd[2664]: 04:46:57.324 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-14T10:25:12.960894+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:25:12.9575 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T10:25:13.062931+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:25:13.0035 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-14T10:25:13.164763+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:25:13.0035 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-14T10:53:23.009428+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:53:23.0058 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T10:53:23.109257+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:53:23.0488 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-14T11:22:17.150719+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 11:22:17.1470 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T11:22:17.251457+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 11:22:17.1890 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+
+
+WARNING REPORTED:
+2025-09-14T09:27:02.565979+05:30 mycloudaws networkd-dispatcher[576]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-14T09:27:04.668033+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.6570 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-14T09:27:06.496223+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8008 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T09:57:03.916352+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:57:03.9129 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T10:14:00.713714+05:30 mycloudaws apt.systemd.daily[2449]: /usr/bin/unattended-upgrade:567: DeprecationWarning: This process (pid=2449) is multi-threaded, use of fork() may lead to deadlocks
+2025-09-14T10:25:12.960894+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:25:12.9575 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T10:53:23.009428+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 10:53:23.0058 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T11:22:17.150719+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 11:22:17.1470 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden

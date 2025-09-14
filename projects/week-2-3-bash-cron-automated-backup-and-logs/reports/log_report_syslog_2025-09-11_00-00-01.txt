@@ -1,0 +1,351 @@
+Log Analysis Report: /var/log/syslog
+Generated on: Thu Sep 11 00:00:01 IST 2025
+
+ERRORS REPORTED:
+2025-09-07T15:13:27.253478+05:30 mycloudaws python3[995]: SyntaxError: invalid syntax
+2025-09-07T15:13:28.361614+05:30 mycloudaws python3[1031]: SyntaxError: invalid syntax
+2025-09-07T15:13:29.525591+05:30 mycloudaws python3[1091]: SyntaxError: invalid syntax
+2025-09-07T15:13:30.474667+05:30 mycloudaws python3[1261]: SyntaxError: invalid syntax
+2025-09-07T15:13:30.632691+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-07T15:13:30.643373+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.6354 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T15:13:32.433311+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.9240 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T15:13:32.533713+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.9936 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T15:13:32.635920+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.9937 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T15:22:08.508085+05:30 mycloudaws fwupd[1416]: 09:52:08.507 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-07T15:42:56.029741+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:42:56.0262 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T15:42:56.130315+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:42:56.0679 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T15:42:56.230808+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:42:56.0680 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T16:01:23.805299+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 5 seen even after reload
+2025-09-07T16:01:23.815937+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethf40efac" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:01:23.831891+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 5 seen even after reload
+2025-09-07T16:04:35.428398+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 7 seen even after reload
+2025-09-07T16:04:35.449396+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethd9ea214" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:04:35.462347+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 7 seen even after reload
+2025-09-07T16:05:37.028024+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 9 seen even after reload
+2025-09-07T16:05:37.045949+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethdeff9a3" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:05:37.060364+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 9 seen even after reload
+2025-09-07T16:09:31.317716+05:30 mycloudaws containerd[632]: time="2025-09-07T16:09:31.317620311+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:09:31+05:30\" level=warning msg=\"faile
+2025-09-07T16:09:31.372400+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 11 seen even after reload
+2025-09-07T16:09:31.388918+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth030943f" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:09:31.404527+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 11 seen even after reload
+2025-09-07T16:09:36.145149+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 13 seen even after reload
+2025-09-07T16:09:36.170507+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth1205dcc" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:09:36.202090+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 13 seen even after reload
+2025-09-07T16:09:41.090329+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 15 seen even after reload
+2025-09-07T16:09:41.109103+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth114f1e8" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:09:41.123244+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 15 seen even after reload
+2025-09-07T16:10:36.911455+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 17 seen even after reload
+2025-09-07T16:10:36.928768+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethc70ff70" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:10:36.943587+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 17 seen even after reload
+2025-09-07T16:12:21.536449+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 19 seen even after reload
+2025-09-07T16:12:21.554609+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethc9d4660" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:12:21.570154+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 19 seen even after reload
+2025-09-07T16:12:53.073976+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:12:53.0704 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T16:12:53.173977+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:12:53.1135 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T16:12:53.274300+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:12:53.1136 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T16:15:38.557951+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethf901e1d" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:15:38.563879+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:15:38.562827514+05:30" level=error msg="Handler for POST /v1.47/containers/0d421c051e1126460931e9662b1fe916b76b1a012bb67d2
+2025-09-07T16:15:38.585634+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethf901e1d" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:16:21.951870+05:30 mycloudaws containerd[632]: time="2025-09-07T16:16:21.951711357+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:16:21+05:30\" level=warning msg=\"faile
+2025-09-07T16:16:22.019010+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 21 seen even after reload
+2025-09-07T16:16:22.035940+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth7429473" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:16:22.054633+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 21 seen even after reload
+2025-09-07T16:19:49.145744+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth024bf2b" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:19:49.174087+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:19:49.172117462+05:30" level=error msg="Handler for POST /v1.47/containers/c6b3faa9ff4ab7becce1faa92d812c5e0235b3ec64e1248
+2025-09-07T16:19:49.175116+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth5006dea" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:19:49.200046+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth5006dea" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:20:47.680282+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth4ec1693" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:20:47.730054+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethec7cded" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:20:47.754463+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth1b91d12" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:23:31.080323+05:30 mycloudaws fwupd[4231]: 10:53:31.080 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-07T16:24:16.949604+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 31 seen even after reload
+2025-09-07T16:24:16.972314+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "veth98578ca" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:24:16.987421+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 31 seen even after reload
+2025-09-07T16:27:11.713363+05:30 mycloudaws containerd[632]: time="2025-09-07T16:27:11.713073629+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:27:11+05:30\" level=warning msg=\"faile
+2025-09-07T16:27:11.808135+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 33 seen even after reload
+2025-09-07T16:27:11.823437+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Failed to get interface "vethca9754c" status: Command '['/usr/bin/networkctl', 'status', '--no-pager', '--no-legend', '--lin
+2025-09-07T16:27:11.850508+05:30 mycloudaws networkd-dispatcher[565]: ERROR:Unknown interface index 33 seen even after reload
+2025-09-07T16:27:12.054466+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:27:12.054192787+05:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontaine
+2025-09-07T16:41:59.771706+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:41:59.7546 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T16:41:59.876706+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:41:59.8123 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T19:10:48.896748+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-07T19:10:48.896763+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-07T19:10:48.907493+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-07T19:10:48.929374+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.925942848+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-07T19:10:48.941450+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.938323557+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-07T19:10:48.941517+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.938521870+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-07T19:10:48.941574+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.938559972+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-07T19:10:48.948885+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.948577387+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-07T19:10:49.004491+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.994572304+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-07T19:10:49.004543+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.994626954+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-07T19:10:49.004720+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.994835980+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-07T19:10:49.016474+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:49.016311394+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-07T19:10:49.459866+05:30 mycloudaws python3[553]: SyntaxError: invalid syntax
+2025-09-07T19:10:50.403401+05:30 mycloudaws python3[896]: SyntaxError: invalid syntax
+2025-09-07T19:10:51.493800+05:30 mycloudaws python3[914]: SyntaxError: invalid syntax
+2025-09-07T19:10:52.443413+05:30 mycloudaws python3[964]: SyntaxError: invalid syntax
+2025-09-07T19:10:53.522734+05:30 mycloudaws python3[1053]: SyntaxError: invalid syntax
+2025-09-07T19:10:53.720555+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-07T19:10:53.736399+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:53.7231 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T19:10:55.531539+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:54.1034 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T19:10:55.633011+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:54.1628 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T19:10:55.735249+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:54.1628 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T19:20:54.195442+05:30 mycloudaws fwupd[1540]: 13:50:54.195 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-07T19:39:44.169140+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:39:44.1656 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T19:39:44.269635+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:39:44.2133 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T19:39:44.370397+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:39:44.2133 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T21:42:10.861828+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-07T21:42:10.861840+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-07T21:42:10.888568+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-07T21:42:10.902840+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.793513772+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-07T21:42:10.902871+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.800157726+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-07T21:42:10.902883+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.800369367+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-07T21:42:10.902892+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.800410756+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-07T21:42:10.902912+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.807465259+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-07T21:42:10.862186+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.859431628+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-07T21:42:10.862250+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.859486292+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-07T21:42:10.862710+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.859657426+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-07T21:42:10.890226+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.890088950+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-07T21:42:11.381126+05:30 mycloudaws python3[554]: SyntaxError: invalid syntax
+2025-09-07T21:42:12.334316+05:30 mycloudaws python3[900]: SyntaxError: invalid syntax
+2025-09-07T21:42:13.308621+05:30 mycloudaws python3[918]: SyntaxError: invalid syntax
+2025-09-07T21:42:14.340891+05:30 mycloudaws python3[946]: SyntaxError: invalid syntax
+2025-09-07T21:42:15.201407+05:30 mycloudaws python3[1073]: SyntaxError: invalid syntax
+2025-09-07T21:42:15.476426+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-07T21:42:15.490430+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.4831 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T21:42:17.276011+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.8072 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T21:42:17.376363+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.8720 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-07T21:42:17.477898+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.8721 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-07T21:44:45.956469+05:30 mycloudaws fwupd[1299]: 16:14:45.956 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-08T00:04:49.522718+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-08T00:04:49.532710+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-08T00:04:49.532718+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-08T00:04:49.587071+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.585009782+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-08T00:04:49.591561+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.590908995+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-08T00:04:49.591637+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.591086064+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-08T00:04:49.591682+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.591119281+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-08T00:04:49.599389+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.599157443+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-08T00:04:49.638338+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.633004029+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-08T00:04:49.638380+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.633033789+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-08T00:04:49.638523+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.636934901+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-08T00:04:49.696216+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.694860478+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-08T00:04:49.997489+05:30 mycloudaws python3[554]: SyntaxError: invalid syntax
+2025-09-08T00:04:50.856784+05:30 mycloudaws python3[928]: SyntaxError: invalid syntax
+2025-09-08T00:04:51.842053+05:30 mycloudaws python3[946]: SyntaxError: invalid syntax
+2025-09-08T00:04:52.698142+05:30 mycloudaws python3[973]: SyntaxError: invalid syntax
+2025-09-08T00:04:53.733082+05:30 mycloudaws python3[1082]: SyntaxError: invalid syntax
+2025-09-08T00:04:53.863871+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-08T00:04:53.869347+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:53.8670 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-08T00:04:55.661375+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:54.1988 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:04:55.761933+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:54.2629 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-08T00:04:55.865427+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:54.2629 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-08T00:31:45.269118+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:31:45.2654 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:31:45.368880+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:31:45.3065 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-08T00:31:45.469127+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:31:45.3065 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-08T00:48:17.816795+05:30 mycloudaws fwupd[1558]: 19:18:17.816 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-08T00:57:51.363115+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:57:51.3593 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:57:51.463526+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:57:51.4032 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-08T00:57:51.563936+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:57:51.4032 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-08T01:27:18.499631+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 01:27:18.4965 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T01:27:18.600507+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 01:27:18.5361 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-09T00:26:09.781573+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-09T00:26:09.788010+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-09T00:26:09.788018+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-09T00:26:09.799472+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.665334531+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-09T00:26:09.799500+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.681185724+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-09T00:26:09.799509+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.681396236+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-09T00:26:09.799525+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.681435491+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-09T00:26:09.799542+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.685132437+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-09T00:26:09.761823+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.759068468+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-09T00:26:09.761875+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.759104632+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-09T00:26:09.762056+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.759532550+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-09T00:26:09.798951+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.798811195+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-09T00:26:10.291463+05:30 mycloudaws python3[554]: SyntaxError: invalid syntax
+2025-09-09T00:26:11.278663+05:30 mycloudaws python3[932]: SyntaxError: invalid syntax
+2025-09-09T00:26:12.232285+05:30 mycloudaws python3[952]: SyntaxError: invalid syntax
+2025-09-09T00:26:13.335895+05:30 mycloudaws python3[995]: SyntaxError: invalid syntax
+2025-09-09T00:26:14.273242+05:30 mycloudaws python3[1079]: SyntaxError: invalid syntax
+2025-09-09T00:26:14.736992+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-09T00:26:14.754974+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:14.7400 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-09T00:26:16.539630+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:15.0774 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T00:26:16.640016+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:15.1403 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-09T00:26:16.741891+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:15.1404 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-09T00:51:56.206815+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:51:56.2036 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T00:51:56.308222+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:51:56.2448 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-09T00:51:56.408857+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:51:56.2448 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-09T01:14:38.182893+05:30 mycloudaws fwupd[1837]: 19:44:38.182 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-09T01:17:23.251048+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:17:23.2475 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T01:17:23.352236+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:17:23.2898 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-09T01:17:23.453050+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:17:23.2898 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-09T01:44:25.296554+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:44:25.2926 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T01:44:25.397128+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:44:25.3397 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-09T01:53:01.822594+05:30 mycloudaws CRON[2775]: (ubuntu) CMD (bash /home/ubuntu/scripting/backup.sh home/ubuntu/scripting/ scripting_backup >> /home/ubuntu/scritping_backups/ || echo "crontab 
+2025-09-09T01:54:01.901655+05:30 mycloudaws CRON[2848]: (ubuntu) CMD (bash /home/ubuntu/scripting/backup.sh home/ubuntu/scripting/ scripting_backup >> /home/ubuntu/scritping_backups/ || echo "crontab 
+2025-09-09T01:55:01.985178+05:30 mycloudaws CRON[2926]: (ubuntu) CMD (bash /home/ubuntu/scripting/backup.sh home/ubuntu/scripting/ scripting_backup >> /home/ubuntu/scritping_backups/ || echo "crontab 
+2025-09-09T01:59:40.205235+05:30 mycloudaws dockerd[912]: time="2025-09-09T01:59:40.204944314+05:30" level=info msg="stopping event stream following graceful shutdown" error="<nil>" module=libcontaine
+2025-09-10T00:55:46.955147+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-10T00:55:46.955167+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-10T00:55:46.966457+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-10T00:55:46.913709+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.910676419+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-10T00:55:46.938632+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.936856931+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-10T00:55:46.938713+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.937073617+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-10T00:55:46.938766+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.937110422+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-10T00:55:46.950773+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.948031024+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-10T00:55:47.008058+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.998923077+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-10T00:55:47.008113+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.998968812+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-10T00:55:47.008300+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.999198786+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-10T00:55:47.038347+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:47.031549382+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-10T00:55:47.565908+05:30 mycloudaws python3[558]: SyntaxError: invalid syntax
+2025-09-10T00:55:48.565817+05:30 mycloudaws python3[935]: SyntaxError: invalid syntax
+2025-09-10T00:55:49.517200+05:30 mycloudaws python3[967]: SyntaxError: invalid syntax
+2025-09-10T00:55:50.917043+05:30 mycloudaws python3[1000]: SyntaxError: invalid syntax
+2025-09-10T00:55:51.831328+05:30 mycloudaws python3[1125]: SyntaxError: invalid syntax
+2025-09-10T00:55:51.924178+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-10T00:55:51.945028+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:51.9267 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-10T00:55:53.744378+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:52.2967 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T00:55:53.846827+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:52.3719 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-10T00:55:53.949112+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:52.3719 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-10T01:05:41.647628+05:30 mycloudaws fwupd[1501]: 19:35:41.646 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-10T23:00:09.566351+05:30 mycloudaws systemd[1]: apport-autoreport.path - Process error reports when automatic reporting is enabled (file watch) was skipped because of an unmet condition check 
+2025-09-10T23:00:09.566359+05:30 mycloudaws systemd[1]: apport-autoreport.timer - Process error reports when automatic reporting is enabled (timer based) was skipped because of an unmet condition chec
+2025-09-10T23:00:09.573899+05:30 mycloudaws kernel: RAS: Correctable Errors collector initialized.
+2025-09-10T23:00:09.747111+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.745088291+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.aufs\"..." error="aufs is not
+2025-09-10T23:00:09.750936+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.749492706+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.blockfile\"..." error="no scr
+2025-09-10T23:00:09.750983+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.749696284+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.btrfs\"..." error="path /var/
+2025-09-10T23:00:09.751039+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.749731165+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.devmapper\"..." error="devmap
+2025-09-10T23:00:09.754481+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.754163690+05:30" level=info msg="skip loading plugin \"io.containerd.snapshotter.v1.zfs\"..." error="path /var/li
+2025-09-10T23:00:09.808334+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.800064754+05:30" level=info msg="skip loading plugin \"io.containerd.tracing.processor.v1.otlp\"..." error="skip 
+2025-09-10T23:00:09.808390+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.800096005+05:30" level=info msg="skip loading plugin \"io.containerd.internal.v1.tracing\"..." error="skip plugin
+2025-09-10T23:00:09.808546+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.800260442+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-10T23:00:09.827229+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.825830031+05:30" level=error msg="failed to load cni during init, please check CRI plugin status before setting u
+2025-09-10T23:00:10.191031+05:30 mycloudaws python3[558]: SyntaxError: invalid syntax
+2025-09-10T23:00:11.210768+05:30 mycloudaws python3[899]: SyntaxError: invalid syntax
+2025-09-10T23:00:12.213076+05:30 mycloudaws python3[926]: SyntaxError: invalid syntax
+2025-09-10T23:00:13.010160+05:30 mycloudaws python3[966]: SyntaxError: invalid syntax
+2025-09-10T23:00:14.015124+05:30 mycloudaws python3[992]: SyntaxError: invalid syntax
+2025-09-10T23:00:14.328069+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-10T23:00:14.346052+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.3310 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-10T23:00:16.130346+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.6711 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:00:16.230714+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.7261 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-10T23:00:16.332635+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.7261 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-10T23:26:02.752840+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:26:02.7489 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:26:02.852611+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:26:02.7952 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-10T23:26:02.952833+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:26:02.7952 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+2025-09-10T23:31:14.068908+05:30 mycloudaws fwupd[1696]: 18:01:14.068 FuPluginLinuxSleep   could not open /sys/power/mem_sleep: Error opening file /sys/power/mem_sleep: No such file or directory
+2025-09-10T23:51:13.801634+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:51:13.7981 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:51:13.901476+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:51:13.8381 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-10T23:51:14.001741+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:51:13.8381 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+
+
+WARNING REPORTED:
+2025-09-07T15:13:29.056479+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-07T15:13:29.374073+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-07T15:13:30.643373+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.6354 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T15:13:32.433311+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:13:30.9240 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T15:42:56.029741+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 15:42:56.0262 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T16:01:23.054158+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 5 seen, reloading interface list
+2025-09-07T16:01:23.737624+05:30 mycloudaws containerd[632]: time="2025-09-07T16:01:23.737269825+05:30" level=warning msg="cleaning up after shim disconnected" id=c4780d12968447699ad3648d746cbe4b31b2a
+2025-09-07T16:01:23.786456+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 5 seen, reloading interface list
+2025-09-07T16:01:23.819755+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 5 seen, reloading interface list
+2025-09-07T16:04:34.880193+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 7 seen, reloading interface list
+2025-09-07T16:04:35.359387+05:30 mycloudaws containerd[632]: time="2025-09-07T16:04:35.358659731+05:30" level=warning msg="cleaning up after shim disconnected" id=4819f5702d99ca9980d23480a7668d93d63fe
+2025-09-07T16:04:35.410342+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 7 seen, reloading interface list
+2025-09-07T16:04:35.455612+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 7 seen, reloading interface list
+2025-09-07T16:05:36.490745+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 9 seen, reloading interface list
+2025-09-07T16:05:36.959049+05:30 mycloudaws containerd[632]: time="2025-09-07T16:05:36.958101423+05:30" level=warning msg="cleaning up after shim disconnected" id=2f73aa0da128325a7b74b2cb5e1e18496f71a
+2025-09-07T16:05:37.009259+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 9 seen, reloading interface list
+2025-09-07T16:05:37.051464+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 9 seen, reloading interface list
+2025-09-07T16:09:30.859778+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 11 seen, reloading interface list
+2025-09-07T16:09:31.301648+05:30 mycloudaws containerd[632]: time="2025-09-07T16:09:31.301296562+05:30" level=warning msg="cleaning up after shim disconnected" id=5ebe656070cbf93341812758a38e64c217486
+2025-09-07T16:09:31.317716+05:30 mycloudaws containerd[632]: time="2025-09-07T16:09:31.317620311+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:09:31+05:30\" level=warning msg=\"faile
+2025-09-07T16:09:31.352745+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 11 seen, reloading interface list
+2025-09-07T16:09:31.394191+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 11 seen, reloading interface list
+2025-09-07T16:09:35.579812+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 13 seen, reloading interface list
+2025-09-07T16:09:36.067462+05:30 mycloudaws containerd[632]: time="2025-09-07T16:09:36.067288664+05:30" level=warning msg="cleaning up after shim disconnected" id=fa1fb15aa0f9f3c6c36c47513402df74c013d
+2025-09-07T16:09:36.124711+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 13 seen, reloading interface list
+2025-09-07T16:09:36.189107+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 13 seen, reloading interface list
+2025-09-07T16:09:40.572909+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 15 seen, reloading interface list
+2025-09-07T16:09:41.019751+05:30 mycloudaws containerd[632]: time="2025-09-07T16:09:41.019431018+05:30" level=warning msg="cleaning up after shim disconnected" id=ff3d27d36fa9fe8a2a5aef8d726edca1e9c5e
+2025-09-07T16:09:41.070360+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 15 seen, reloading interface list
+2025-09-07T16:09:41.114942+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 15 seen, reloading interface list
+2025-09-07T16:10:36.406092+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 17 seen, reloading interface list
+2025-09-07T16:10:36.842333+05:30 mycloudaws containerd[632]: time="2025-09-07T16:10:36.841364561+05:30" level=warning msg="cleaning up after shim disconnected" id=7586877b316ee80e2bc3cc4fad096b62572b1
+2025-09-07T16:10:36.892825+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 17 seen, reloading interface list
+2025-09-07T16:10:36.934743+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 17 seen, reloading interface list
+2025-09-07T16:12:21.017497+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 19 seen, reloading interface list
+2025-09-07T16:12:21.468317+05:30 mycloudaws containerd[632]: time="2025-09-07T16:12:21.467533438+05:30" level=warning msg="cleaning up after shim disconnected" id=0771cafe329ca168ad72f05d769a0bbe66b92
+2025-09-07T16:12:21.517901+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 19 seen, reloading interface list
+2025-09-07T16:12:21.560153+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 19 seen, reloading interface list
+2025-09-07T16:12:53.073976+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:12:53.0704 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T16:13:59.419124+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 21 seen, reloading interface list
+2025-09-07T16:15:38.475393+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 23 seen, reloading interface list
+2025-09-07T16:15:38.530515+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:15:38.530333301+05:30" level=warning msg="Failed to allocate and map port: Bind for 0.0.0.0:8000 failed: port is already a
+2025-09-07T16:16:21.935121+05:30 mycloudaws containerd[632]: time="2025-09-07T16:16:21.934358450+05:30" level=warning msg="cleaning up after shim disconnected" id=287a9b588de348af161c3a931851ecf250cdb
+2025-09-07T16:16:21.951870+05:30 mycloudaws containerd[632]: time="2025-09-07T16:16:21.951711357+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:16:21+05:30\" level=warning msg=\"faile
+2025-09-07T16:16:21.986253+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 21 seen, reloading interface list
+2025-09-07T16:16:22.039341+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 21 seen, reloading interface list
+2025-09-07T16:16:32.345580+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 25 seen, reloading interface list
+2025-09-07T16:16:38.192070+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 27 seen, reloading interface list
+2025-09-07T16:19:49.111640+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 29 seen, reloading interface list
+2025-09-07T16:19:49.137192+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:19:49.136163418+05:30" level=warning msg="Failed to allocate and map port: Bind for 0.0.0.0:8000 failed: port is already a
+2025-09-07T16:20:47.533990+05:30 mycloudaws containerd[632]: time="2025-09-07T16:20:47.533668290+05:30" level=warning msg="cleaning up after shim disconnected" id=fadfcde6cdb7a69e3734eec55ccb92239e5a1
+2025-09-07T16:20:47.539984+05:30 mycloudaws containerd[632]: time="2025-09-07T16:20:47.539781314+05:30" level=warning msg="cleaning up after shim disconnected" id=40e34a56f6dd713a02e6b322e4ae5417cf96f
+2025-09-07T16:20:47.604277+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:20:47.604122098+05:30" level=warning msg="failed to stop docker-proxy for port mapping 0.0.0.0:8000:172.17.0.2:8000/tcp: o
+2025-09-07T16:20:47.610419+05:30 mycloudaws dockerd[921]: time="2025-09-07T16:20:47.610074730+05:30" level=warning msg="failed to stop docker-proxy for port mapping 0.0.0.0:8080:172.17.0.3:8000/tcp: o
+2025-09-07T16:20:47.616756+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 25 seen, reloading interface list
+2025-09-07T16:22:52.899114+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 31 seen, reloading interface list
+2025-09-07T16:24:16.873307+05:30 mycloudaws containerd[632]: time="2025-09-07T16:24:16.871856414+05:30" level=warning msg="cleaning up after shim disconnected" id=9443b7f93d70f991a9d0e74d0c720c8bc992b
+2025-09-07T16:24:16.920016+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 31 seen, reloading interface list
+2025-09-07T16:24:16.978263+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 31 seen, reloading interface list
+2025-09-07T16:24:52.384503+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 33 seen, reloading interface list
+2025-09-07T16:27:11.693374+05:30 mycloudaws containerd[632]: time="2025-09-07T16:27:11.693165651+05:30" level=warning msg="cleaning up after shim disconnected" id=9f8775141214dd6dbe3fc6de6732de009a63d
+2025-09-07T16:27:11.713363+05:30 mycloudaws containerd[632]: time="2025-09-07T16:27:11.713073629+05:30" level=warning msg="cleanup warnings time=\"2025-09-07T16:27:11+05:30\" level=warning msg=\"faile
+2025-09-07T16:27:11.779423+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 33 seen, reloading interface list
+2025-09-07T16:27:11.840658+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 33 seen, reloading interface list
+2025-09-07T16:27:13.401596+05:30 mycloudaws networkd-dispatcher[565]: WARNING:Unknown index 35 seen, reloading interface list
+2025-09-07T16:41:59.771706+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 16:41:59.7546 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T19:10:48.941373+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.937140197+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-07T19:10:49.004720+05:30 mycloudaws containerd[621]: time="2025-09-07T19:10:48.994835980+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-07T19:10:52.809567+05:30 mycloudaws networkd-dispatcher[566]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-07T19:10:53.088572+05:30 mycloudaws networkd-dispatcher[566]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-07T19:10:53.736399+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:53.7231 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T19:10:55.531539+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:10:54.1034 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T19:39:44.169140+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[570]: 2025-09-07 19:39:44.1656 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-07T21:42:10.902863+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.798116190+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-07T21:42:10.862710+05:30 mycloudaws containerd[624]: time="2025-09-07T21:42:10.859657426+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-07T21:42:14.410032+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-07T21:42:14.643126+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-07T21:42:15.490430+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.4831 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-07T21:42:17.276011+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-07 21:42:15.8072 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:04:49.588944+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.588834219+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-08T00:04:49.638523+05:30 mycloudaws containerd[634]: time="2025-09-08T00:04:49.636934901+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-08T00:04:53.071038+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-08T00:04:53.308797+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-08T00:04:53.869347+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:53.8670 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-08T00:04:55.661375+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:04:54.1988 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:31:45.269118+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:31:45.2654 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T00:57:51.363115+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 00:57:51.3593 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-08T01:27:18.499631+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-08 01:27:18.4965 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T00:26:09.799485+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.679821120+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-09T00:26:09.762056+05:30 mycloudaws containerd[622]: time="2025-09-09T00:26:09.759532550+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-09T00:26:13.536397+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-09T00:26:13.818919+05:30 mycloudaws networkd-dispatcher[567]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-09T00:26:14.754974+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:14.7400 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-09T00:26:16.539630+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:26:15.0774 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T00:51:56.206815+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 00:51:56.2036 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T01:17:23.251048+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:17:23.2475 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-09T01:44:25.296554+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[571]: 2025-09-09 01:44:25.2926 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T00:55:46.936629+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.933700662+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-10T00:55:47.008300+05:30 mycloudaws containerd[625]: time="2025-09-10T00:55:46.999198786+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-10T00:55:50.902489+05:30 mycloudaws networkd-dispatcher[571]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-10T00:55:51.154995+05:30 mycloudaws networkd-dispatcher[571]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-10T00:55:51.945028+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:51.9267 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-10T00:55:53.744378+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[575]: 2025-09-10 00:55:52.2967 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:00:09.750848+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.748827135+05:30" level=info msg="loading plugin \"io.containerd.warning.v1.deprecations\"..." type=io.containerd.
+2025-09-10T23:00:09.808546+05:30 mycloudaws containerd[652]: time="2025-09-10T23:00:09.800260442+05:30" level=info msg="Start cri plugin with config {PluginConfig:{ContainerdConfig:{Snapshotter:overla
+2025-09-10T23:00:13.693023+05:30 mycloudaws networkd-dispatcher[571]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-10T23:00:13.929148+05:30 mycloudaws networkd-dispatcher[571]: WARNING:Unknown index 4 seen, reloading interface list
+2025-09-10T23:00:14.346052+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.3310 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-10T23:00:16.130346+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:00:14.6711 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:26:02.752840+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:26:02.7489 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-10T23:51:13.801634+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[577]: 2025-09-10 23:51:13.7981 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
