@@ -1,0 +1,20 @@
+Log Analysis Report: /var/log/syslog
+Generated on: Sun Sep 14 09:49:51 IST 2025
+
+ERRORS REPORTED:
+2025-09-14T09:26:59.869694+05:30 mycloudaws python3[563]: SyntaxError: invalid syntax
+2025-09-14T09:27:01.050312+05:30 mycloudaws python3[1072]: SyntaxError: invalid syntax
+2025-09-14T09:27:02.630922+05:30 mycloudaws python3[1160]: SyntaxError: invalid syntax
+2025-09-14T09:27:03.771094+05:30 mycloudaws python3[1485]: SyntaxError: invalid syntax
+2025-09-14T09:27:04.655495+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: Error occurred fetching the seelog config file path:  open /etc/amazon/ssm/seelog.xml: no such file or directory
+2025-09-14T09:27:04.667996+05:30 mycloudaws python3[1594]: SyntaxError: invalid syntax
+2025-09-14T09:27:04.668033+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.6570 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-14T09:27:06.496223+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8008 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
+2025-09-14T09:27:06.597313+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8593 ERROR EC2RoleProvider Failed to connect to Systems Manager with SSM role credentials. error
+2025-09-14T09:27:06.699132+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8593 ERROR [CredentialRefresher] Retrieve credentials produced error: no valid credentials could
+
+
+WARNING REPORTED:
+2025-09-14T09:27:02.565979+05:30 mycloudaws networkd-dispatcher[576]: WARNING:Unknown index 3 seen, reloading interface list
+2025-09-14T09:27:04.668033+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.6570 WARN Error adding the directory '/etc/amazon/ssm' to watcher: no such file or directory
+2025-09-14T09:27:06.496223+05:30 mycloudaws amazon-ssm-agent.amazon-ssm-agent[581]: 2025-09-14 09:27:04.8008 WARN EC2RoleProvider Failed to connect to Systems Manager with instance profile role creden
