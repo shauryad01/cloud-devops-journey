@@ -11,6 +11,8 @@ Each folder explores a practical skill needed for DevOps & Cloud.
 
 - `linux-cli/` — command-line workflows & automation
 - `git-experiments/` — version control & collaboration
+- `bash-cron-scripting` — automation with Bash scripts and scheduled tasks using cron 
+- `projects/` — combined workflows & mini use-cases
 
 Planned (not started yet):
 
@@ -21,7 +23,6 @@ Planned (not started yet):
 - `monitoring/` — observing infra health & metrics
 - `kubernetes/` — container orchestration at scale
 - `ansible/` — automating config & setup
-- `projects/` — combined workflows & mini use-cases
 
 ---
 
