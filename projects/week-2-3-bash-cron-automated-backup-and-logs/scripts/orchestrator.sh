@@ -1,6 +1,6 @@
 <<task
 This script is used to backup a folder and parse logs
-Given arguments $1 = path of folder to backup, $2 = path of log to parse, $3 = Directory to store backup, $4 = Directory to store log parse report, $5 = email ID
+Given arguments $1 = path of folder to backup, $2 = path of log to parse, $3 = Directory to store backup, $4 = Directory to store log parse report
 Also send an email in case of failure 
 task
 
@@ -9,8 +9,8 @@ set -e
 
 source /home/ubuntu/scripting/scripts/.env
 
-if [ $# -ne 5 ];then
-	echo "Invalid inputs. Usage: $0 <path_of_folder_to_backup> <path_of_log_to_parse> <backup_dir> <report_dir> <email>"
+if [ $# -ne 4 ];then
+	echo "Invalid inputs. Usage: $0 <path_of_folder_to_backup> <path_of_log_to_parse> <backup_dir> <report_dir>"
 	exit 1
 fi
 
@@ -18,7 +18,6 @@ FOLDER_TO_BACKUP="$1"
 LOG_TO_PARSE="$2"
 BACKUP_DIR="$3"
 REPORT_DIR="$4"
-EMAIL="$5"
 
 mkdir -p "$BACKUP_DIR" "$REPORT_DIR"
 
