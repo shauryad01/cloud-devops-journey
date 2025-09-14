@@ -1,4 +1,4 @@
-# Bash-Cron Scripting Project — Automated Backups, Log Parsing & Alerts
+# Week 2-3 Bash-Cron Scripting Project — Automated Backups, Log Parsing & Alerts
 
 A lightweight automation suite for **backing up folders**, **parsing logs**, and **sending email alerts** on failure.
 Built entirely with **Bash, cron, AWS CLI (SES)**, and standard Linux tools.
