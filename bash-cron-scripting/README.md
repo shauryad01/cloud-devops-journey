@@ -21,7 +21,7 @@ Explored Bash scripting fundamentals, cron scheduling, and built an automated ba
 - **backup.sh** → Took `<source_dir>` and `<backup_dir>` as args, created timestamped `.tar.gz` backups.
 - **parse_logs.sh** → Took a log path, searched for `error`/`warn`, saved a timestamped report.
 - **orchestrator.sh** → Ran both scripts with absolute paths, ensuring it works regardless of working directory.
-- **django_deploy.sh** → Fully deployed a Django app leveraging bash and cron automation.
+- **deploy_django_app.sh** → Fully deployed a Django app leveraging bash and cron automation.
 
 ### Launched AWS Instance
 
@@ -38,7 +38,7 @@ Explored Bash scripting fundamentals, cron scheduling, and built an automated ba
 │   ├── backup.sh
 │   ├── parse_logs.sh
 │   ├── orchestrator.sh
-│   ├── django_deploy.sh
+│   ├── deploy_django_app.sh
 │   ├── hello.sh
 │   └── (extras: create_user.sh, launch_aws_instance.sh, etc.)
 ```
