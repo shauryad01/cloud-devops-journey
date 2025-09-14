@@ -1,4 +1,4 @@
-# Cheatsheet: 07 - Searching-and-Text-Processing
+# Cheatsheet: 07 - Text-Processing
 
 ## Viewing Files
 
