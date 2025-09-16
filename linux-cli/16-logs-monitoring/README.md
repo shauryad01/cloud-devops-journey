@@ -6,77 +6,126 @@ Covered the essentials of Linux logging, monitoring, and log rotation. Learned h
 
 ## 📌 What I Did
 
+---
+
 ### Log Directories & Files
 
-- `pwd` # confirm working directory
-- `ls -l /var/log/` # list logs
-- `du -sh /var/log/* | sort -h` # check log sizes
-- `less /var/log/syslog` # system messages
-- `less /var/log/auth.log` # authentication logs
-- `less /var/log/kern.log` # kernel logs
-- `grep sshd /var/log/auth.log` # filter auth log entries
-- Searched within less using `/ssh`
+Explored where Linux stores logs and inspected key files:
+
+```
+pwd                        # confirm root directory
+ls -l /var/log/            # list log files
+du -sh /var/log/* | sort -h  # check sizes
+less /var/log/syslog       # system messages
+less /var/log/auth.log     # authentication logs
+less /var/log/kern.log     # kernel logs
+grep sshd /var/log/auth.log  # filter for SSH entries
+```
+
+- Searched inside less with `/ssh`.
+
+---
 
 ### Journalctl Basics
 
-- `journalctl` # view all logs
-- `journalctl -xe` # recent errors
-- `journalctl -b` # logs since current boot
-- `journalctl -b -1` # previous boot logs
-- `journalctl -u ssh` # filter by service
-- `journalctl -p 3 -b` # errors only
-- `journalctl -k` # kernel-only logs
-- `journalctl -r` # reverse order
-- `journalctl -n 5` # last 5 entries
-- `journalctl --list-boots` # list boots
-- Filtered with grep: `journalctl | grep HawkEye`
-- Customized output:
-  - `journalctl -o short`
-  - `journalctl -o json-pretty`
-  - `journalctl --utc`
-  - `journalctl --disk-usage`
+Queried and filtered the systemd journal:
 
-### Send & Verify Custom Logs
+```
+journalctl                # view all logs
+journalctl -xe            # recent errors
+journalctl -b             # logs since current boot
+journalctl -b -1          # previous boot logs
+journalctl -u ssh         # filter by service
+journalctl -p 3 -b        # errors only
+journalctl -k             # kernel-only messages
+journalctl -r             # reverse order
+journalctl -n 5           # last 5 entries
+journalctl --list-boots   # list all boots
+journalctl --disk-usage   # show journal size
+```
 
-- `logger "HawkEye test log – $(date)"`
-- `journalctl | grep "HawkEye"`
+Customized output:
 
-### Real-Time Following
+```
+journalctl -o short
+journalctl -o json-pretty
+journalctl --utc
+```
 
-- `tail -f /var/log/syslog`
-- `less +F /var/log/syslog`
-- `journalctl -f`
+---
 
-### System Monitoring Commands
+### Custom Log Messages
 
-- `uptime` # load averages
-- `w` # logged-in users
-- `top` # default monitor
-- `htop` # nicer monitor
-- `vmstat 1 5`
-- `iostat 1 5`
-- `sar -u 1 5`
-- `df -h` # disk usage
-- `du -sh * | sort -h`
+Sent and verified test logs:
+
+```
+logger "HawkEye test log – $(date)"
+journalctl | grep "HawkEye"
+```
+
+---
+
+### Real-Time Monitoring
+
+Followed logs as they updated:
+
+```
+tail -f /var/log/syslog
+less +F /var/log/syslog
+journalctl -f
+```
+
+---
+
+### System Health Tools
+
+Monitored performance and usage:
+
+```
+uptime             # load averages
+w                  # active users
+top                # default process monitor
+htop               # enhanced monitor
+vmstat 1 5         # virtual memory stats
+iostat 1 5         # I/O statistics
+sar -u 1 5         # CPU usage history
+df -h              # disk usage by filesystem
+du -sh * | sort -h # per-directory usage
+```
+
+---
 
 ### Log Rotation
 
-- `cat /etc/logrotate.conf`
-- `ls -l /etc/logrotate.d/`
-- `less /etc/logrotate.d/syslog`
-- `sudo logrotate -d /etc/logrotate.conf` # dry-run
-- Set journalctl limits:
-  - `sudo journalctl --vacuum-size=1G` # cap size
-  - `sudo journalctl --vacuum-time=2weeks` # cap age
-- Enable persistent storage:
-  - `sudo mkdir -p /var/log/journal && sudo systemctl restart systemd-journald`
+Checked and tested rotation settings:
 
-### Kernel Messages with dmesg
+```
+cat /etc/logrotate.conf
+ls -l /etc/logrotate.d/
+less /etc/logrotate.d/syslog
+sudo logrotate -d /etc/logrotate.conf  # dry-run
+```
 
-- `dmesg` # view kernel messages
-- `dmesg -c` # view and clear
-- `dmesg -w` # follow in real time
-- `dmesg | grep -i memory` # filter
+Controlled journal size and retention:
+
+```
+sudo journalctl --vacuum-size=1G
+sudo journalctl --vacuum-time=2weeks
+sudo mkdir -p /var/log/journal && sudo systemctl restart systemd-journald
+```
+
+---
+
+### Kernel Messages
+
+Inspected and managed kernel logs with dmesg:
+
+```
+dmesg                   # view kernel messages
+dmesg -c                # view and clear
+dmesg -w                # follow in real time
+dmesg | grep -i memory  # filter for memory-related messages
+```
 
 ---
 
