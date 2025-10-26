@@ -14,7 +14,11 @@ Each folder explores a practical skill needed for DevOps & Cloud.
 - `git-experiments/` — version control & collaboration
 - `linux-cli/` — command-line workflows & automation
 - `projects/` — combined workflows & mini use-cases
+<<<<<<< HEAD
 - `terraform/` — provisioning infra as code (IaC)
+=======
+- `aws-foundations/` — launching cloud infra & services
+>>>>>>> 1ccb346 (Update README.md)
 
 Planned (not started yet):
 
