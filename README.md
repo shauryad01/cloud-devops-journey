@@ -13,10 +13,10 @@ Each folder explores a practical skill needed for DevOps & Cloud.
 - `git-experiments/` — version control & collaboration
 - `bash-cron-scripting` — automation with Bash scripts and scheduled tasks using cron 
 - `projects/` — combined workflows & mini use-cases
+- `aws-foundations/` — launching cloud infra & services
 
 Planned (not started yet):
 
-- `aws-basics/` — launching cloud infra & services
 - `docker/` — packaging & running apps in containers
 - `terraform/` — provisioning infra as code (IaC)
 - `ci-cd/` — pipelines for build, test, deploy
