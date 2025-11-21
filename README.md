@@ -9,16 +9,16 @@ Not a course — just raw experiments, commits, configs, and fixes.
 
 Each folder explores a practical skill needed for DevOps & Cloud.
 
-- `linux-cli/` — command-line workflows & automation
-- `git-experiments/` — version control & collaboration
-- `bash-cron-scripting` — automation with Bash scripts and scheduled tasks using cron 
-- `projects/` — combined workflows & mini use-cases
 - `aws-foundations/` — launching cloud infra & services
+- `bash-cron-scripting` — automation with Bash scripts and scheduled tasks using cron 
+- `git-experiments/` — version control & collaboration
+- `linux-cli/` — command-line workflows & automation
+- `projects/` — combined workflows & mini use-cases
+- `terraform/` — provisioning infra as code (IaC)
 
 Planned (not started yet):
 
 - `docker/` — packaging & running apps in containers
-- `terraform/` — provisioning infra as code (IaC)
 - `ci-cd/` — pipelines for build, test, deploy
 - `monitoring/` — observing infra health & metrics
 - `kubernetes/` — container orchestration at scale
