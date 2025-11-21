@@ -28,6 +28,13 @@ resource "aws_security_group" "mysecgroup" {
     cidr_blocks = ["0.0.0.0/0"]
     description = "HTTP Open"
   }
+  ingress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+
+  }
 
   ingress {
     from_port   = 8000
@@ -38,9 +45,10 @@ resource "aws_security_group" "mysecgroup" {
   }
 
   egress {
-    from_port = 0
-    to_port   = 0
-    protocol  = "-1"
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   tags = {
@@ -51,13 +59,16 @@ resource "aws_security_group" "mysecgroup" {
 
 
 resource "aws_instance" "ec2instance" {
-  key_name        = aws_key_pair.terra_key.key_name
-  security_groups = [aws_security_group.mysecgroup.name]
-  instance_type   = "t2.micro"
-  ami             = "ami-0ecb62995f68bb549"
+  key_name                    = aws_key_pair.terra_key.key_name
+  security_groups             = [aws_security_group.mysecgroup.name]
+  vpc_security_group_ids      = [aws_security_group.mysecgroup.id]
+  instance_type               = var.ec2_instance_type
+  ami                         = var.ec2_ami_id
+  associate_public_ip_address = true
+  user_data                   = file("install_nginx.sh")
 
   root_block_device {
-    volume_size = 8
+    volume_size = var.ec2_root_storage_size
     volume_type = "gp3"
   }
 
