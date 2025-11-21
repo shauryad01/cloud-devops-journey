@@ -1,3 +1,14 @@
 projects/week-1-todo-list-cli/.todo-list.sh.swp
 projects/week-1-todo-list-cli/taskdone.txt
 projects/week-1-todo-list-cli/tasklist.txt
+
+terraform.tfstate
+terraform.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+terra-key-ec2
+*.pem
+*.key
+__pycache__/
+
