@@ -1,6 +1,10 @@
 resource "aws_key_pair" "terra_key" {
-  key_name   = "terraform-key"
+  key_name   = "${var.env}-terraform-key"
   public_key = file("terra-key-ec2.pub")
+  tags = {
+    Name = "${var.env}-terraform-key"
+    type = "string"
+  }
 }
 
 resource "aws_default_vpc" "default" {
@@ -9,7 +13,7 @@ resource "aws_default_vpc" "default" {
 
 
 resource "aws_security_group" "mysecgroup" {
-  name        = "automate-sg"
+  name        = "${var.env}-automate-sg"
   description = "this will add a TF generated security group"
   vpc_id      = aws_default_vpc.default.id
 
@@ -60,8 +64,7 @@ resource "aws_security_group" "mysecgroup" {
 
 resource "aws_instance" "ec2instance" {
   for_each = tomap({
-    "EC2_prod" = "prod",
-    "EC2_test" = "test"
+    "EC2_dev" = "dev",
   })
 
   depends_on = [aws_security_group.mysecgroup, aws_key_pair.terra_key]
