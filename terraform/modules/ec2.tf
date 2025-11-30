@@ -80,6 +80,7 @@ resource "aws_instance" "ec2instance" {
   }
 
   tags = {
-    Name = "Terraform-EC2-Automate"
+    Name        = "Terraform-EC2-Automate"
+    Environment = var.env
   }
 }
