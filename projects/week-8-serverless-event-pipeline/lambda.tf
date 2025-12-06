@@ -13,3 +13,15 @@ resource "aws_lambda_function" "lambda_function" {
   runtime          = "python3.12"
   depends_on       = [aws_iam_role.lambda_exec_role, aws_iam_role_policy_attachment.lambda_exec_role_attachment]
 }
+
+resource "aws_lambda_permission" "lambda_s3_permission" {
+  statement_id  = "AllowS3Invoke"
+  action        = "lambda:InvokeFunction"
+  function_name = aws_lambda_function.lambda_function.function_name
+  principal     = "s3.amazonaws.com"
+  source_arn    = aws_s3_bucket.serverless_pipeline_bucket.arn
+  depends_on = [
+    aws_s3_bucket.serverless_pipeline_bucket,
+    aws_lambda_function.lambda_function
+  ]
+}
