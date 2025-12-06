@@ -1,8 +1,9 @@
 resource "aws_key_pair" "terra_key" {
-  key_name   = "${var.env}-infra-app-key"
+  key_name   = "${var.env}-terraform-key"
   public_key = file("terra-key-ec2.pub")
   tags = {
-    Environment = var.env
+    Name = "${var.env}-terraform-key"
+    type = "string"
   }
 }
 
@@ -12,7 +13,7 @@ resource "aws_default_vpc" "default" {
 
 
 resource "aws_security_group" "mysecgroup" {
-  name        = "${var.env}-infra-app-sg"
+  name        = "${var.env}-automate-sg"
   description = "this will add a TF generated security group"
   vpc_id      = aws_default_vpc.default.id
 
@@ -55,27 +56,34 @@ resource "aws_security_group" "mysecgroup" {
   }
 
   tags = {
-    name = "${var.env}-infra-app-sg"
+    name = "automate-sg"
   }
 
 }
 
 
 resource "aws_instance" "ec2instance" {
-
-  count = var.instance_count
+  for_each = tomap({
+    "EC2_dev" = "dev",
+  })
 
   depends_on = [aws_security_group.mysecgroup, aws_key_pair.terra_key]
 
   key_name                    = aws_key_pair.terra_key.key_name
   security_groups             = [aws_security_group.mysecgroup.name]
   vpc_security_group_ids      = [aws_security_group.mysecgroup.id]
-  instance_type               = var.instance_type
+  instance_type               = var.ec2_instance_type
   ami                         = var.ec2_ami_id
   associate_public_ip_address = true
+  user_data                   = file("install_nginx.sh")
+
+  root_block_device {
+    volume_size = each.value == "prod" ? 20 : var.ec2_default_root_storage_size
+    volume_type = "gp3"
+  }
 
   tags = {
-    Name        = "${var.env}-infra-app-instance"
+    Name        = "Terraform-EC2-Automate"
     Environment = var.env
   }
 }
