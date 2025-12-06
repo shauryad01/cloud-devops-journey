@@ -1,6 +1,6 @@
 # Week 7 — Multi-Environment AWS Infrastructure Using Terraform Modules
 
-A fully Infrastructure-as-Code (IaC) project using Terraform to provision a complete AWS setup across three environments: **dev**, **stg**, and **prd**. Everything — EC2 instances, DynamoDB tables, S3 buckets, VPCs, and Security Groups — is deployed through custom Terraform modules, ensuring a clean, reusable, and scalable IaC structure.
+A fully Infrastructure-as-Code (IaC) project using Terraform to provision a complete AWS setup across three environments: **dev**, **stg**, and prd. Everything — EC2 instances, DynamoDB tables, S3 buckets, VPCs, and Security Groups — is deployed through custom Terraform modules, ensuring a clean, reusable, and scalable IaC structure.
 
 This week focused on building infra the DevOps way: modular, reproducible, environment-aware, and version-controlled.
 
@@ -123,6 +123,7 @@ Terraform provides detailed logs using:
 ## Useful Links
 
 - [Terraform AWS Provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs)
+
 - [Terraform Modules Guide](https://developer.hashicorp.com/terraform/language/modules)
 - [AWS EC2 Docs](https://docs.aws.amazon.com/ec2/)
 - [AWS DynamoDB Docs](https://docs.aws.amazon.com/dynamodb/)
