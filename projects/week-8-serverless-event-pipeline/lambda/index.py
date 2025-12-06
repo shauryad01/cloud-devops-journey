@@ -15,7 +15,7 @@ def handler(event, context):
     table = dynamodb.Table(table_name)
 
     table.put_item(Item={
-        "file_key": key,
+        "file_name": key,
         "bucket": bucket,
         "timestamp": time
     })
